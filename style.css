@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: rgb(255, 255, 255)
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: url("https://images.unsplash.com/photo-1697510362388-9df6cd3e9d53?q=80&w=2089&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass-container {
+    height: 560px;
+    width: 320px;
+    padding: 30px 50px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+
+    /*back drop filter is used to blur the background image, it can not be seen until the background color is made slightly transparent*/
+
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 3px 3px rgb(0, 0, 0, 0.2);
+
+    /* border-top and border-left are used to create a border effect on the top and left side of the container - as if light is coming from that direction, we can also add a box shadow that should be very weak because glass doesn't cast a huge shadow*/
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1 {
+    margin: 30px;
+}
